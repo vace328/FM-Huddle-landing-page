@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
@@ -7,12 +7,12 @@
 
 // 2. Include any default variable overrides here
 $font-size-base: 1rem;
-// $primary: red;
-// $secondary: hsl(170, 45%, 43%);
-$font-family-sans-serif: 'Open Sans';
-$h2-font-size:  $font-size-base * 2.5 !default;
+$primary: hsl(322, 100%, 66%);
+
+// $font-family-sans-serif: 'Open Sans';
+// $h2-font-size:  $font-size-base * 2.5 !default;
 $container-max-widths: (
-    sm: 540px,
+    sm: 686px,
     md: 720px,
     lg: 960px,
     xl: 1140px,
@@ -42,15 +42,15 @@ $grid-breakpoints: (
 @import "../node_modules/bootstrap/scss/containers";
 // @import "../node_modules/bootstrap/scss/grid";
 // @import "../node_modules/bootstrap/scss/forms";
-// @import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/buttons";
 // @import "../node_modules/bootstrap/scss/transitions";
 // @import "../node_modules/bootstrap/scss/dropdown";
 // @import "../node_modules/bootstrap/scss/nav";
 // @import "../node_modules/bootstrap/scss/navbar";
 
 
-// @import "../node_modules/bootstrap/scss/helpers";
-// @import "../node_modules/bootstrap/scss/utilities/api";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
 
 // 5. Add additional custom code here
 // .nav-link {
