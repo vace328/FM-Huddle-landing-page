@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*----------  base
+------------------------------------------------------------------------------*/
+@import "base/reset";
+@import "base/variables";
+@import "base/typography"; 
+
+/*----------  layout
+------------------------------------------------------------------------------*/
+@import "layout/header";
+@import "layout/footer";
+
+* {
+    box-sizing: border-box;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0,0);
+    border: 0;
+}
+body {
+    // background: rgb(175,103,233);
+    // background: linear-gradient(180deg, rgba(175,103,233,1) 20%, rgba(101,101,231,1) 73%);
+    width: 100%;
+    min-height: 100vh;
+    // padding: 129px 24px 40px 64px;
+}
+
+
