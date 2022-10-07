@@ -12,16 +12,17 @@ $primary: hsl(322, 100%, 66%);
 // $font-family-sans-serif: 'Open Sans';
 // $h2-font-size:  $font-size-base * 2.5 !default;
 $container-max-widths: (
+    // sm: 686px,
     sm: 686px,
-    md: 720px,
+    md: 687px,
     lg: 960px,
     xl: 1140px,
     xxl: 1280px);    
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
+  sm: 480px,
+  md: 750px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -40,8 +41,10 @@ $grid-breakpoints: (
 // @import "../node_modules/bootstrap/scss/type";
 // @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
-// @import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/grid";
 // @import "../node_modules/bootstrap/scss/forms";
+
+
 @import "../node_modules/bootstrap/scss/buttons";
 // @import "../node_modules/bootstrap/scss/transitions";
 // @import "../node_modules/bootstrap/scss/dropdown";
@@ -57,3 +60,7 @@ $grid-breakpoints: (
 //     padding-left: 29px;
 //     padding-right: 29px;
 // }
+
+:not(.btn-check) + .btn:active {
+  border-color: hsl(208, 11%, 90%);
+}

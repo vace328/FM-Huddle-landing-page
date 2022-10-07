@@ -65,9 +65,55 @@ header {
     }
 }
 .hero {
-    padding-top: 167px;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    background-image: url("/images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #EDFBFE;
 }
 
+.hero-img {
+    width: 100%;
+}
+.hero-img-wrapper {
+    padding-left: 52px;
+    padding-right: 16px;
+}
+.hero-text-wrapper {
+    padding-top: 97px;
+    h2 {
+        margin-bottom: 28px;
+    }
+    p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 32px;
+    }
+}
+
+.hero-text-wrapper .btn-hero {
+    width: 280px;
+    height: 56px;
+    background-color: $accent;
+    font-size: 15px;
+    font-weight: 700;
+    color: $primary_lvl_1;
+    cursor: pointer;
+}
+.btn-hero:hover {
+    color: $primary_lvl_1;
+    background-color: lighten($accent, 10%);
+}
+
+@media screen and (max-width: 1000px) {
+    header .btn-header {
+        font-size: 20px;
+    }
+}
 
 @media screen and (max-width: 750px) {
     .logo {
@@ -75,5 +121,16 @@ header {
     }
     header .btn-header {
         width: 192px;
+        font-size: 16px;
     }
 }
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 160px;
+    }
+    header .btn-header {
+        width: 140px;
+        height: 40px;
+    }
+}
+
