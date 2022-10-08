@@ -12,6 +12,10 @@
 @import "layout/header";
 @import "layout/footer";
 
+/*----------  sections
+------------------------------------------------------------------------------*/
+@import "sections/blocks";
+
 * {
     box-sizing: border-box;
 }
