@@ -114,6 +114,13 @@ header {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .hero-text-wrapper {
+        text-align: center;
+        margin-bottom: 106px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .logo {
         width: 208px;
@@ -122,10 +129,11 @@ header {
         width: 192px;
         font-size: 16px;
     }
-    // .hero {
+    .hero {
+        background-image: url("/images/bg-hero-mobile.svg");
         // padding-bottom: 66px;
         // border-bottom: 1px solid black;
-    // }
+    }
 
     .hero .row {
         padding-left:40px;
@@ -133,15 +141,13 @@ header {
     }
 
     .hero-text-wrapper {
-        padding-top: 102px;        
-        text-align: center;
-        margin-bottom: 106px;
+        padding-top: 102px;
         h2 {
             margin-bottom: 42px;
-            padding-left: 40px;
-            padding-right: 40px;
-            // font-size: 50px;
-            // font-weight: 600;
+            
+            padding-left: 10px;
+            padding-right: 10px;
+           
             font-size: 48px;
             line-height: 72px;
             letter-spacing: -0.005em;
@@ -165,6 +171,22 @@ header {
         padding-right: 14px;
         margin-bottom: 6px;
     }
+}
+@media screen and (max-width: 610px) {
+    .hero .row {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .hero-text-wrapper .btn-hero {
+        width: 100%
+    }
+    // .logo {
+    //     width: 160px;
+    // }
+    // header .btn-header {
+    //     width: 140px;
+    //     height: 40px;
+    // }
 }
 @media screen and (max-width: 480px) {
     .logo {
