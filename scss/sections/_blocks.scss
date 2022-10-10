@@ -1,5 +1,5 @@
 .blocks {
-    padding: 160px 33px 16px 33px;
+    padding: 160px 35px 16px 35px;
     // border: 1px solid red;
     // background-color: firebrick;
 }
@@ -7,7 +7,7 @@
 .block {    
     // border: 1px solid black;
     // background-color: aqua;
-    padding: 54px 27px 54px 112px;
+    padding: 54px 27px 52px 112px;
     border-radius: 16px;
     margin-bottom: 40px;
     h2 {
@@ -34,7 +34,7 @@
 
 // Block 2
 .block:nth-of-type(2) {
-    padding: 62px 20px 68px 0px;
+    padding: 62px 20px 72px 0px;
 }
 .block:nth-of-type(2) .block-text{
     padding-right: 0px;
@@ -92,6 +92,26 @@
 //     }
 // }
 
+@media screen and (max-width: 1400px) {
+    .block {
+        padding: 50px 30px 50px 30px;
+        text-align: left;
+    }
+    .block-text,
+    .block:nth-of-type(2) .block-text,
+    .block:last-of-type .block-text {
+        padding-top: 40px;
+    }
+    .block:nth-of-type(2) {
+        padding: 62px 40px 72px 0px;
+    }
+    .block:nth-of-type(2) .block-img-wrapper{
+        padding-left: 40px;
+    }
+    .block:last-of-type {
+        padding-left: 40px;
+    }
+}
 
 
 
@@ -99,8 +119,7 @@
 
 
 
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 992px) {
     .blocks {
         padding: 116px 20px 16px 20px;
         
@@ -116,7 +135,7 @@
         padding-left: 74px;
         padding-right: 68px;
         padding-top: 0px;
-        margin-bottom: 16px;
+        margin-bottom: 70px;
     }
     .block-text {
         padding-left: 34px;
@@ -134,32 +153,65 @@
 
     // Second block
     .block:nth-of-type(2) .block-img-wrapper {
-        padding-left: 70px;
-        padding-right: 62px;
-        padding-top: 18px;
-        margin-bottom: 38px;
+        padding-left: 96px;
+        padding-right: 54px;
+        padding-top: 68px;
+        margin-bottom: 96px;
     } 
     .block:nth-of-type(2) .block-text {
-        padding-left: 48px;
-        padding-right: 50px;
-        padding-bottom: 54px;
+        padding-left: 84px;
+        padding-right: 40px;
+        padding-bottom: 38px;
         p {
-            padding-left: 2px;
+            padding-left: 0px;
         }
     }
     // Third block
     .block:last-of-type .block-img-wrapper {
-        padding-left: 66px;
+        padding-left: 54px;
         padding-right: 62px;
-        padding-top: 10px;
-        margin-bottom: 26px;
+        padding-top: 62px;
+        margin-bottom: 82px;
     }
     .block:last-of-type .block-text {
-        padding-left: 60px;
+        padding-left: 48px;
         padding-right: 60px;
-        padding-bottom: 12px;
+        padding-bottom: 8px;
         h2 {
             margin-bottom: 28px;
         }
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .block,
+    .block:nth-of-type(2),
+    .block:last-of-type {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 40px;
+    }
+    .block-text,
+    .block:nth-of-type(2) .block-text,
+    .block:last-of-type .block-text {
+        padding-left: 12px;
+        padding-right: 12px;
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        h2 {
+            font-size: 36px;
+            // line-height: 1.8;
+        }
+    }
+    .block-img-wrapper,
+    .block:nth-of-type(2) .block-img-wrapper,
+    .block:last-of-type .block-img-wrapper {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 20px;
+        padding-top: 0;
     }
 }

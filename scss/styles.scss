@@ -57,7 +57,7 @@ header {
         width: 200px;
         height: 48px;
         background-color: white;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 700;
         color: $primary_lvl_3;
         cursor: pointer;
@@ -69,10 +69,11 @@ header {
 }
 .hero {
     padding-top: 160px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
     background-image: url("/images/bg-hero-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     background-color: #EDFBFE;
 }
 
@@ -102,7 +103,7 @@ header {
     width: 280px;
     height: 56px;
     background-color: $accent;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: $primary_lvl_1;
     cursor: pointer;
@@ -123,6 +124,9 @@ header {
         text-align: center;
         margin-bottom: 106px;
     }
+    header .btn-header {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -131,7 +135,7 @@ header {
     }
     header .btn-header {
         width: 192px;
-        font-size: 16px;
+        // font-size: 16px;
     }
     .hero {
         background-image: url("/images/bg-hero-mobile.svg");
@@ -183,15 +187,9 @@ header {
     }
     .hero-text-wrapper .btn-hero {
         width: 100%
-    }
-    // .logo {
-    //     width: 160px;
-    // }
-    // header .btn-header {
-    //     width: 140px;
-    //     height: 40px;
-    // }
+    }   
 }
+
 @media screen and (max-width: 480px) {
     .logo {
         width: 160px;
@@ -199,6 +197,11 @@ header {
     header .btn-header {
         width: 140px;
         height: 40px;
+    }
+    .hero-text-wrapper {
+        p {
+            font-size: 30px;
+        }
     }
 }
 
