@@ -4,7 +4,7 @@ body {
 }
 
 p {
-    font-size: fsize_primary;
+    font-size: $fsize_primary;
 }
 h2 {
     font-weight: 600;
@@ -16,3 +16,4 @@ h2 {
 h3 {
     font-size: 14px;
 }
+

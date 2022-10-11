@@ -20,6 +20,17 @@
     box-sizing: border-box;
 }
 
+a {
+    color: $primary_lvl_3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: $primary_lvl_3;
+    text-decoration: underline;
+}
+
 .screen-readers-only {
     position: absolute;
     width: 1px;
@@ -35,9 +46,7 @@ body {
     min-height: 100vh;
     // padding: 129px 24px 40px 64px;
 }
-// main {
-//     position: relative;
-// }
+
 div {
     width: auto;
     display: block;
@@ -149,13 +158,6 @@ header {
     cursor: pointer;
 }
 
-
-footer {
-    height: 300px;
-    padding: 100px;
-
-    background-color: rgb(155, 93, 16);
-}
 
 @media screen and (max-width: 1000px) {
     header .btn-header {
