@@ -85,7 +85,8 @@ header {
 .hero {
     padding-top: 160px;
     padding-bottom: 62px;
-    background-image: url("/images/bg-hero-desktop.svg");
+    // background-image: url("/images/bg-hero-desktop.svg");
+    background-image: url("../images/bg-hero-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -202,9 +203,9 @@ header {
         // font-size: 16px;
     }
     .hero {
-        background-image: url("/images/bg-hero-mobile.svg");
-        // padding-bottom: 66px;
-        // border-bottom: 1px solid black;
+        // background-image: url("/images/bg-hero-mobile.svg");
+        background-image: url("../images/bg-hero-mobile.svg");
+        
     }
 
     .hero .row {
@@ -246,9 +247,6 @@ header {
     .cta-block {
         max-width: calc(100% - 30px);
     }
-    // .cta-block .btn-cta {
-    //     width: 90%;
-    // }
 }
 @media screen and (max-width: 610px) {
     .hero .row {
