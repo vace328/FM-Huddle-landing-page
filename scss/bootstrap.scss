@@ -63,4 +63,5 @@ $grid-breakpoints: (
 
 :not(.btn-check) + .btn:active {
   border-color: hsl(208, 11%, 90%);
+  background-color: white;
 }

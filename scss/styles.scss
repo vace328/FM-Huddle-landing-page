@@ -78,6 +78,9 @@ header {
         color: $primary_lvl_2;
         background-color: white;
     }
+    .btn-header:active {
+        color: $primary_lvl_2;
+    }
 }
 .hero {
     padding-top: 160px;
